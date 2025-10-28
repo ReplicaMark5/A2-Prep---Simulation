@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Verification vs Validation.md",
+                "file": "AI/Verification vs Validation.md",
                 "mode": "source",
                 "source": false
               },
@@ -209,7 +209,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Verification vs Validation.md",
+            "file": "AI/Verification vs Validation.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -270,10 +270,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3e388ba1bce907f",
+  "active": "8a56f5fdf9c4de43",
   "lastOpenFiles": [
     "AI/Validation.md",
-    "Verification vs Validation.md",
+    "AI/Verification vs Validation.md",
     "A2 Preparation Guide (Final).md",
     "Contribution from iPhone test.md",
     "AI/Genetic Algorithm.md",
