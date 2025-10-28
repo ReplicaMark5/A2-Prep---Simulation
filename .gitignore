@@ -1,0 +1,13 @@
+# Obsidian local and machine-specific data
+.obsidian/workspace*
+.obsidian/appearance.json
+
+# Plugin caches and local configs
+.obsidian/plugins/*/data.json
+.obsidian/plugins/obsidian-git/
+.obsidian/plugins/obsidian-sync/
+.obsidian/plugins/templater-obsidian/cache/
+
+#tab and pain layout
+.obsidian/workspace.json
+

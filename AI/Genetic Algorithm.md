@@ -1,6 +1,6 @@
 
 ---
-Here are concise, exam-aligned notes for the **Genetic Algorithm (GA)** section, built strictly from your lecturer’s transcript and the official A2 guide.
+Here are concise, exam-aligned notes for the **Genetic Algorithm (GA)** section [[ebook.pdf#page=90&selection=9,0,9,21&color=note|p.90]], built strictly from the lecturer’s transcript and the official A2 guide.
 
 ---
 
@@ -28,6 +28,24 @@ Here are concise, exam-aligned notes for the **Genetic Algorithm (GA)** section,
 |**Crossover**|Combines parts of two parent solutions to create offspring — main exploration mechanism.|
 |**Mutation**|Randomly alters some solution elements — prevents premature convergence and adds diversity.|
 |**Selection**|Chooses which individuals become parents based on fitness. Drives exploitation.|
+
+<p align="center">
+Population<br>
+↓<br>
+Fitness Evaluation<br>
+↓<br>
+Selection<br>
+↓<br>
+Crossover<br>
+↓<br>
+Mutation<br>
+↓<br>
+New Population<br>
+↓<br>
+Fitness Evaluation<br>
+↓<br>
+(Repeat until termination)
+</p>
 
 ---
 

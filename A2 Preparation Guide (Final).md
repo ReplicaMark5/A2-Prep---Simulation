@@ -134,7 +134,7 @@ Reference notes: [[Validation]]
 
 | Procedure                                                                                   | Required Knowledge                                                                                                                                             |
 | :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Genetic Algorithm (GA)**                                                                  | Crossover / mutation / population size ↔ exploration; generations ↔ exploitation.                                                                              |
+| **Genetic Algorithm (GA)** [[Genetic Algorithm \| GA]]                                      | Crossover / mutation / population size ↔ exploration; generations ↔ exploitation.                                                                              |
 | **Procedure Kim–Nelson (KN)** [[ebook.pdf#page=81&selection=157,0,157,24&color=note\|p.81]] | A _procedure_ performing _just enough replications_ to separate systems statistically — contrasts with ANOVA’s fixed replications. Know properties, not steps. |
 
 ---
