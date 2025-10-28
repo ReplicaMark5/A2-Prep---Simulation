@@ -1,0 +1,4 @@
+.smallpdf .internal-embed.pdf-embed { width:400px !important; height:120px !important; }
+.smallpdf .pdf-viewer, 
+.smallpdf .pdf-container,
+.smallpdf .pdf-embed iframe { height:120px !important; }

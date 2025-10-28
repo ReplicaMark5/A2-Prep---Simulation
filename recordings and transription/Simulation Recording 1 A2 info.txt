@@ -1,0 +1,165 @@
+00:03
+you are on a Windows machine and you want to be able to open, can press Ctrl L and it will go into presentation mode. don't know how it works and all that. Anyway, it is the breakdown of the 8.2 and 8.3. First of all, admin tutorial 11 will be submitted to the mod and then next week you will complete tutorial 12. We will call the mod and return it as soon as possible.
+
+00:57
+But note that there is a stop minimum that you must achieve for assessment further. So there is a gate you can be denied access if you did not comply. I think most of you comply. But also, they do this or something. So make sure about that. if you have model framework, please, will be And then I'm to tell you.
+
+01:25
+study the dots, do this, do that, and you will be fine. But people say we laugh behind your backs.  It's not true. It's not true. don't play games. So  when you prepare for the A's, make sure you can do the total questions. I cannot see how you can try to attempt the A,  too,  if you cannot do the total questions with your eyes closed.
+
+01:48
+I've done many examples in class. I've done many examples of previous assessments giving away marked  questions and flavors of questions. So  I would start with these when I  prefer you to prepare. Then study the theory. It helps.  And you may just make marks that you will need.
+
+02:11
+So I will get to the end of each topic. It's typically what I would summarize if I were a student. If I had to set the total tests, I would use these, the five ones for the test, then modifications or variations of these for A2. I try everything to help you, but I'm not going to give you the answer. That's the only thing I know.
+
+02:39
+The big picture, the donut principle, scanned the total contents of the e-book.  If you see inverse transform, you see  inverse transform  continues of the script. Ask yourself,  myself, do I know what this is about?  Can I write something down? Can I come and tell my mom?
+
+02:57
+So if you can  recognize  the topics, then you will be fine in A2. My experience is that students  study and they study,  but they don't  link  what they study to what the topic actually is.  I know... oh
+
+03:18
+Specifically my post grad students say, you were nasty, we thought you're not gonna ask that one last year and you did it. Do not sport, don't play games, study what I tell you to study and I'll tell you what to do. There are all papers in circulation, but that's a long time ago so I can move on. There are also notes of previous years in circulation, want you several occasions previously to read.
+
+04:04
+I don't require you to know any syntax.
+
+04:10
+the same with the TPS objects. So I'm not going to ask you what is a buffer or a single problem or a problem, but the EM, the experiment manager, the output, you must know very well, you must be able to interpret it so I can give you a picture of the confidence intervals.
+
+04:30
+oh I'm not even gonna try and argue, you will get the beta question. Five scenarios, cheap,  expensive, p-values, which one is the winner?  Who's the No fuss about it. It was in the tutorial,  and you'll do it now repetitively.
+
+04:50
+to select a scenario today for the number of doctors, nurses, CR1, S-OBNO, et cetera. So I believe that procedure is broadened to you for me to, you don't have to study this, that was with the statistical values that we provided. I'll give you the formula sheet and the one that's attached to the back of this file is the one that you will see on the seventh of March. Not all of the,
+
+05:20
+Formulas are applicable. It's a standardized formula. So you may need some of those formulas, but not all of them. Often students try to interpolate and extrapolate and say, if this formula here is going to ask for the play link.
+
+05:35
+uh I uh will ask you, I'm asking calculations for example, TFP,  I can't wait 77 people to understand you.  Stay hours in the calculator so there's no need  in you doing that.
+
+05:53
+oh Then the GA must be known, the genetic algorithm. You must know across the patient.
+
+06:01
+The choice of population size and number of generations, two are very important. It's about the exploration and I'm to explain it to you.  You have a solution or a problem with a decision space that's huge,  solution space that is huge.  So  what do you do to explore  and to exploit?  Explorers are white.  You look and exploit is how do you  utilize the information you have.
+
+06:27
+So, explore is about the population size and explore is about the norm.
+
+06:37
+the cost of computational effort. That's all this.
+
+06:45
+The machine is very important but you don't need to know the procedure in detail. don't expect you to memorize it. But you must know the difference between KM and the one that we do. that's a no-go. No-go is a fixed number of applications. KM is smart. It only does enough applications to separate scenarios or experiments. Or tell you, can't separate these. are similar.
+
+07:16
+And then the models. You must know them very well, including the use of model zero. After a two year, after a year students say, I don't know what.
+
+07:30
+I've explicitly put it in the model framework in case we have to go to port. So I have a solid case.  It is the drive-through model. It's the McDonald's model. It's the McDean model.
+
+07:44
+There will be questions and comments.  For example, the validation buffer sizes must be  correctly stated  and the right order must go to the right column.
+
+07:59
+Then work through the models and see what theory is applicable.  It's usually  what we did in the past tutorials. First question, the systems type variables.
+
+08:16
+input output that's failed.  is what I'm...
+
+08:22
+The told me that we must include that table to guide you, to help you to understand what you must study for the world. That's what they summarized. In that table, the Shannon Road Access events don't say pay for burgers at McDonald's or cook.
+
+08:45
+to pay his food.  That's not an event. The event is when something starts  and when something ends. And the wise student would open their ears now and their minds and they would realize, he gives me the answer.
+
+08:59
+An event is not prepared for. An event is something that occurs at a point in time. That's why we call it discrete event simulation. So if you are a wise, student, would realize any process or anything that happens happens at a point in time. And I'm going to give him that in the next video.
+
+09:20
+Patient arrives, patient leaves, that point in time, that's an event. Doctor starts  seeing patient, doctor finishes seeing patient. Doctor starts washing hands, doctor finishes washing hands. Customer joins queue, that point where the customer joins queue, that's an event. Customer exits queue, that's an event.  Same variables.
+
+09:45
+for yourself, where you see the model evolves over time from p0, and then at the capital T you stop and you pause it. Then you count how many are in the buffer, how many are in the section, what is the utilization of the doctor. It's very simple. There are no catches, that's what I'm trying to tell you. It's so simple, but you complicate it. I'm you the answer.
+
+10:16
+Understand the dynamics of the model. So, Donald's is effectively a buffer allocation problem which you will do next week. Because you have stations  and the products flow from one station to the other,  but you can't proceed with the limited  space between stations. oh
+
+10:40
+is the  trauma unit model.  What are the entities? What are the attributes? It's not mandatory.
+
+10:50
+How  can I apply sentence both of you? Well, it's question one.
+
+10:58
+What would happen if the buffer allocation problem, buffer sizes are increased to infinity?  This presentation was supposed to happen next week,  you would then be acquainted with the buffer. Anyway,  same for McDonald's.  Spaces between windows  are increased to infinity.  Why do all the models have upper bounds for their throughput? Can you remember the discuss it?
+
+11:28
+Every model that's on  the left that's like a source that says X4, X10 or whatever, that is the maximum.
+
+11:41
+in the hospital for trauma unit model, if patients arrive, say, at X-Protect 10, it means every 10 minutes on average, there's a patient, so there are six patients per hour. If you run it for 24 hours, you expect 24.6, which is under 50. So if you run your model for 24 hours and you get 180, 122, you run your model.
+
+12:10
+But you would never get way more than that because that is the maximum that the source can provide. I think if you wake the boxers in turn, I the truth will come to light. I see that source as a tap. You have pipe network here. If the pipes are thin, you have little water dripping out of the tap.
+
+12:37
+you make those pipes huge, everything that the tap provides will run out there. It's a mass palace. You get that?
+
+12:48
+Voice from a unit to relax.
+
+12:51
+Well,  yes,  doctors in the family.
+
+12:58
+question is actually just an interview that you can watch. The question arrives at the section which is resource. The question goes to the CR, grossing resources, doctors, nurses, at a certain requirement, one on one one.
+
+13:25
+Validation, very important. What must I do to make the model adequately represented? Not accurate. Please don't use that word. There's no such thing as an accurate model. It's adequate. So in the case of the McDonald's model, you can have more spaces between mirrors and mirrors. They are physically.
+
+13:51
+The kinematics will allow you to specify the pathos as infinite, but it will give you a false answer because that's not the real one.
+
+14:02
+catch in today's model  if you have the option workers stage here after completing the job. It's those little grey work spaces.
+
+14:15
+If you  check that,  which means the workers' space at that position where it was called to work,  is that valid?
+
+14:27
+So the doctor and the nurse go to the consulting room. They finish the patient. The patient goes away and remodeled by checking and saying you're stable. Is that bad? It's not bad. In this case, the doctor and nurse must go to the restroom and scrub again. If you don't want to go to the consulting room and the doctor has still left, he's not going to.
+
+14:52
+That's counterintuitive. Do I bother you? No. em
+
+15:19
+So even if your queue is low and you carry little inventory, you reorder five bottles of water every 10 minutes. It costs you a of money. You don't carry any, but people bring up in every time you're supposed to do that. So think of your models. I have done this one in 2.4 today.
+
+15:41
+So I expect you to know this symbol. That capital thing there is capital omega in Greek. And the X-ball is the set of possible input values. So in your experiments where you selected longer doctors, longer nurses, CR1 falls. CR1 falls. One of those rows is one of those ball eggs.
+
+16:10
+because it's a vector, it's a single procedure monocompress and it's the state of the proof. So x.vol is available in the experiment. Can you see this model?
+
+16:25
+Now here's the paper layout and marks the location. Question three is, question one is theory, so find simulations, frame lists, why do we simulate?  We, for example, investigate before we  expand the business. We don't want to spend capital unnecessary. oh
+
+17:03
+So I decided not to play games. did not ask for reason I do so there's no case question three four five six seven eight nine
+
+17:21
+I just said question one of each order. Question 10 is output H in star multi-objective optimization of the rule. It's three hours, 118 miles, et cetera. So I did not ask in A2 Monte Carlo, concatenating system, and KS.
+
+17:48
+But in the group of software, you must know. oh You don't have to take photos of something. For example, in the group of software test, you know you do a hypothesis test and you make a type one error. What are these? Type one error is where you reject the null, but it's true, et cetera.
+
+18:13
+I know many women who committed type 1 errors, they rejected New Walla 2. And then A3, it's more or less the same format, but there is a case there, but still no Monte Carlo or DT. It's not all and. So I say good time there. You are welcome to call it out for the A's button.
+
+18:40
+Okay, scale of difficulty. The A1 was 47 out of 100, A2 is 60, and A3 is 752. It's not true, I'm just not too sure. This is the formula sheet, so as I said before, you don't need to basically apply all of them.
+
