@@ -25,14 +25,18 @@ Instead, you must show **how you applied those ideas in your own simulation**—
 
 ---
 
+
+> [!NOTE] Important
+> 
+
 ### 3. Applied example (based on the tutorials)
 
-|Theoretical idea (from textbook)|Practical validation action you describe|
-|---|---|
-|**Continuity test:** small input change → small output change|You change **buffer size** from 2 to 3 and observe **throughput** rising slightly (not jumping unpredictably).|
-|**Operational validity:** model behaviour matches logic|As buffer size increases, you identify the **minimum throughput** (system starved) and **maximum throughput** (system saturated). These bounds confirm the model reacts logically.|
-|**Consistency:** repeatability of results|Running the same buffer setting several times yields throughput within the expected confidence interval.|
-|**Degeneracy test:** removing a resource reduces performance|You temporarily disable one machine or reduce capacity and confirm throughput drops.|
+| Theoretical idea (from textbook)                              | Practical validation action you describe                                                                                                                                           |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Continuity test:** small input change → small output change | You change **buffer size** from 2 to 3 and observe **throughput** rising slightly (not jumping unpredictably).                                                                     |
+| **Operational validity:** model behaviour matches logic       | As buffer size increases, you identify the **minimum throughput** (system starved) and **maximum throughput** (system saturated). These bounds confirm the model reacts logically. |
+| **Consistency:** repeatability of results                     | Running the same buffer setting several times yields throughput within the expected confidence interval.                                                                           |
+| **Degeneracy test:** removing a resource reduces performance  | You temporarily disable one machine or reduce capacity and confirm throughput drops.                                                                                               |
 
 ---
 
