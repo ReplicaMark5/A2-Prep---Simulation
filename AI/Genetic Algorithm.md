@@ -8,12 +8,14 @@ Here are concise, exam-aligned notes for the **Genetic Algorithm (GA)** section 
 
 ### 1. Core Concept
 
-- GA is a **meta-heuristic optimisation method** inspired by natural selection.
-    
-- Used to **search large decision spaces** efficiently when analytical optimisation is impractical.
-    
-- Produces _good_, not guaranteed optimal, solutions within reasonable time.
-    
+
+> [!danger] Remove this
+> - GA is a **meta-heuristic optimisation method** inspired by natural selection.
+>     
+> - Used to **search large decision spaces** efficiently when analytical optimisation is impractical.
+>     
+> - Produces _good_, not guaranteed optimal, solutions within reasonable time.
+>     
 
 ---
 
