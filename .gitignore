@@ -9,3 +9,5 @@
 .obsidian/plugins/templater-obsidian/cache/
 
 .obsidian/plugins/*/data.json
+
+.claude/
