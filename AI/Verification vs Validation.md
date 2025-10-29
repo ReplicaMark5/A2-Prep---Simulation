@@ -21,14 +21,14 @@ Ensures the model is an adequate representation of the real-world system for its
 
 ## 2. Main Differences
 
-|Aspect|Verification|Validation|
-|---|---|---|
-|**Objective**|Check correctness of model logic and code.|Check realism and usefulness of the model.|
-|**Focus**|Internal consistency and technical accuracy.|External consistency and conceptual accuracy.|
-|**Question answered**|“Is the model implemented correctly?”|“Is the model an adequate representation of the real system?”|
-|**Methods**|Debugging, syntax checking, walkthroughs, animation tracing, deterministic test runs.|Face validation, expert review, statistical tests (t-test, Wilcoxon), comparison with real data.|
-|**Timing**|During and after model coding.|During and after model execution.|
-|**Responsibility**|Modeller/analyst.|Analyst, user, and technical evaluator.|
+| Aspect                | Verification                                                                          | Validation                                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Objective**         | Check correctness of model logic and code.                                            | Check realism and usefulness of the model.                                                       |
+| **Focus**             | Internal consistency and technical accuracy.                                          | External consistency and conceptual accuracy.                                                    |
+| **Question answered** | “Is the model implemented correctly?”                                                 | “Is the model an adequate representation of the real system?”                                    |
+| **Methods**           | Debugging, syntax checking, walkthroughs, animation tracing, deterministic test runs. | Face validation, expert review, statistical tests (t-test, Wilcoxon), comparison with real data. |
+| **Timing**            | During and after model coding.                                                        | During and after model execution.                                                                |
+| **Responsibility**    | Modeller/analyst.                                                                     | Analyst, user, and technical evaluator.                                                          |
 
 ---
 
