@@ -1,5 +1,6 @@
 **Exam Duration:** 3 hours  
 **Total Marks:** 180
+# <span style="color:rgb(255, 0, 0)">DO THE TUT MODELS AND CLASS QUESTIONS</span>
 
 ---
 
@@ -67,9 +68,9 @@ Focus on:
 >     
 >     - $x$ = specific decision variable combination. <span style="color:rgb(0, 176, 80)">(a single solutions combination of decision variables)</span>
 >         
->     - $\Omega$ = decision space (all possible $x$). <span style="color:rgb(255, 0, 0)">(set of all feasible combinations of decision variables)</span>
+>     - $\Omega$ = decision space (all possible $x$). <span style="color:rgb(0, 176, 80)">(set of all feasible combinations of decision variables)</span>
 >         
-> - **ξ** — stochastic components such as service or failure times.
+> - **ξ** — stochastic components such as service or failure times. [[ebook.pdf#page=86&selection=126,2,126,39&color=note|p.86]]  <span style="color:rgb(0, 176, 80)">(stochastic elements of the model)</span>
 >     
 
 > [!missing] Excluded
@@ -97,7 +98,7 @@ Know **Model 0 (Drive-through / McD)** and all other models.
 
 Goal: _Adequate_ representation, not “accurate.” 
 Discuss real tests, not theory lists.
-Reference notes: [[Validation]]
+Reference notes: [[Validation]] and [[Verification vs Validation]]
 
 | Model                         | Validation Focus                                                          |
 | :---------------------------- | :------------------------------------------------------------------------ |
