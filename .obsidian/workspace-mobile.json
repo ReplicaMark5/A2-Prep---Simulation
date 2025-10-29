@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "A2 Preparation Guide (Final).md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -292,8 +292,9 @@
   },
   "active": "8a6d8f95ce49be47",
   "lastOpenFiles": [
-    "docs/ebook.pdf",
+    "tutorials/tut12_questions.pdf",
     "A2 Preparation Guide (Final).md",
+    "docs/ebook.pdf",
     "AI/Verification vs Validation.md",
     "AI/Validation.md",
     "Contribution from iPhone test.md",
