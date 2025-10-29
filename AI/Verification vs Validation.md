@@ -1,10 +1,3 @@
-
-Here’s a concise, **exam-ready summary** you can copy straight into your `Verification and Validation.md` Obsidian note — formatted cleanly, objective in tone, and with key textbook quotes included.
-
----
-
-# Verification and Validation in Simulation
-
 ## 1. Definitions
 
 **Verification** – _“Did we build the model right?”_  
