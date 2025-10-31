@@ -11,3 +11,7 @@
 .obsidian/plugins/*/data.json
 
 .claude/
+
+/docs/ebook
+
+*.xlsx
