@@ -1,0 +1,23 @@
+/* Global: Make ALL MathJax equations larger */
+mjx-container {
+  font-size: 150% !important;
+}
+
+/* Center display-mode math blocks */
+mjx-container[display="true"] {
+  text-align: center !important;
+  margin: 1.5em auto !important;
+}
+
+/* Optional: Per-note override using cssclass: math-large */
+/* Add 'cssclass: math-large' to front matter for even bigger equations */
+.math-large mjx-container {
+  font-size: 180% !important;
+}
+
+/* Optional: Keep inline math at normal size to avoid line-height issues */
+.markdown-preview-view mjx-container[display="false"],
+.markdown-rendered mjx-container[display="false"] {
+  font-size: 110% !important;
+  vertical-align: middle;
+}

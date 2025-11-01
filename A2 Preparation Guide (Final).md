@@ -34,7 +34,7 @@
 | TPS object definitions                                                                       | Excluded                                                     | Excluded                                                     |
 | Monte Carlo & Contaminating System (NTS)                                                     | Excluded                                                     | Excluded                                                     |
 | Kolmogorov–Smirnov (K–S) test                                                                | Excluded                                                     | <span style="color:rgb(0, 176, 80)">Included</span>          |
-| Procedure Kim–Nelson (KN)                                                                    | <span style="color:rgb(112, 48, 160)">Properties only</span> | <span style="color:rgb(112, 48, 160)">Properties only</span> |
+| Procedure Kim–Nelson (KN) [[KN – Properties]]                                                | <span style="color:rgb(112, 48, 160)">Properties only</span> | <span style="color:rgb(112, 48, 160)">Properties only</span> |
 
 ---
 
@@ -133,10 +133,10 @@ Reference notes: [[Validation]] and [[Verification vs Validation]]
 
 ### 6. Algorithms and Procedures
 
-| Procedure                                                                                   | Required Knowledge                                                                                                                                             |
-| :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Genetic Algorithm (GA)** [[Genetic Algorithm \| GA]]                                      | Crossover / mutation / population size ↔ exploration; generations ↔ exploitation.                                                                              |
-| **Procedure Kim–Nelson (KN)** [[ebook.pdf#page=81&selection=157,0,157,24&color=note\|p.81]] | A _procedure_ performing _just enough replications_ to separate systems statistically — contrasts with ANOVA’s fixed replications. Know properties, not steps. |
+| Procedure                                                                                   | Required Knowledge                                                                                                                                                                                                                                                                                                    |
+| :------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Genetic Algorithm (GA)** [[Genetic Algorithm \| GA]]                                      | Crossover / mutation / population size ↔ exploration; generations ↔ exploitation.                                                                                                                                                                                                                                     |
+| **Procedure Kim–Nelson (KN)** [[ebook.pdf#page=81&selection=157,0,157,24&color=note\|p.81]] | A _procedure_ performing _just enough replications_ to separate systems statistically — contrasts with ANOVA’s fixed replications. Know properties, not steps. [[KN – Properties]]<br>*"know the properties, but not the formulas or detail steps. You must be able to explain to a third year what it does and why"* |
 
 ---
 

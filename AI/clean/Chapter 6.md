@@ -44,7 +44,6 @@ _Source: Lecture 6 (pp. 85–103) + Transcript (A2 Prep Lecture) + Tut 08 Q1–Q
 
 8. **Pareto Ranking**
    - You must be able to do Pareto ranking of solutions
-   - Note: This is **not strictly correct** in the case of MOSO (due to stochastic uncertainty)
 
 ⭐ = Explicitly emphasized in survival kit
 
@@ -77,14 +76,6 @@ _Source: Lecture 6 (pp. 85–103) + Transcript (A2 Prep Lecture) + Tut 08 Q1–Q
 **Example:**
 If three inputs each have 5 options → $5^3 = 125$ possible combinations.
 - With 10 variables and 5 options each → $5^{10} = 9,765,625$ possibilities!
-
-**Why Meta-Heuristics for Simulation-Optimisation?**
-- Mathematical optimizers (MILP, ε-constraint) work well for **deterministic** problems with explicit equations
-- In **simulation-based** optimization, the objective function $f(x,\xi)$ is:
-  - **Stochastic** (random outputs due to $\xi$)
-  - **Not explicit** (no closed-form equation)
-  - **Black-box** (can't take derivatives or compute gradients)
-- Therefore, we use **meta-heuristics** (GA, SA, PSO) that only need to compare results, not differentiate them
 
 ---
 
@@ -146,11 +137,6 @@ Find an **approximate best** solution when analytical models are too complex or 
 > **Explore is how wide you look** and **exploit is about how do you utilize the information** so explore is about the **population size** of exploit is about a **number of generations**. How many times you allow that algorithm to learn at the cost of computational effort?"
 >
 > _— Lecturer, A2 Prep Lecture_
-
-> [!danger] What You Must Know (exam scope confirmed by lecturer)
-> You must know what **crossover** is, and the role of
-> **population size** (exploration) and **number of generations** (exploitation).
-> *Explore = how widely you search; Exploit = how deeply you refine.*
 
 ### 🔹 Basic Working
 1. **Encoding** – represent each solution as a string (chromosome).  
@@ -230,9 +216,8 @@ subject to $x \in S_F$ (feasible region)
 - **$f_i(x,\xi)$** = each performance measure (e.g., cost, waiting time, throughput)
 
 > [!danger] Critical Distinction
-> **The GA changes $x$ only** (decision variables), NOT $\xi$ (random variables).
-> Random variables $\xi$ remain **fixed in distribution** (same mean, variance, range) across all simulations.
-> The GA observes how system performance changes **in response to different $x$** values.
+> **GA changes $x$ only** (decision variables), NOT $\xi$ (random variables).
+> $\xi$ remains fixed in distribution; GA observes performance changes in response to different $x$ values.
 
 ---
 
@@ -245,20 +230,6 @@ subject to $x \in S_F$ (feasible region)
 |**Pareto front**|Exact curve|Approximate curve (subject to sampling error)|
 |**Computation**|Direct evaluation|Repeated simulation runs per solution|
 |**Typical methods**|MILP, ε-constraint, NSGA-II|GA/NSGA-II combined with simulation|
-
----
-
-### Why MOSO is Computationally Expensive
-
-**Implication:**
-- We can only **estimate** performance → the Pareto front itself is **approximate**
-- Each solution $x$ requires **multiple replications** to estimate mean performance accurately
-- Sampling noise + variance make results uncertain
-- Total simulation runs = Population Size × Generations × Replications per solution
-
-**Example:**
-With 50 population members, 100 generations, 10 replications:
-$50 \times 100 \times 10 = 50,000$ simulation runs!
 
 ---
 
@@ -276,7 +247,6 @@ $50 \times 100 \times 10 = 50,000$ simulation runs!
 
 > [!info] Survival Kit Requirement #7
 > "Always keep in mind that in SO, we can only estimate an approximate Pareto set, and that a computational burden is associated with SO. **The concepts illustrated in Figure 6.11 are very important to understand.**"
-> **Emphasis**: Figure 6.11 is explicitly called "very important" - understand it thoroughly
 
 > [!danger] Key Insight
 > In SO and MOSO, every simulation run costs time.
@@ -285,17 +255,15 @@ $50 \times 100 \times 10 = 50,000$ simulation runs!
 
 ### Why the Pareto Set is Only Approximate
 
-In deterministic optimization, $f(x)$ gives an **exact value**.
-In simulation-based optimization:
+Deterministic: $f(x)$ gives **exact values**.
+Simulation: $f(x,\xi)$ = stochastic output depending on random $\xi$.
 
-$$f(x,\xi) = \text{simulation output depending on random variable } \xi$$
+To estimate true mean: $\hat{f}(x) = \frac{1}{n} \sum_{i=1}^n f(x,\xi_i)$
 
-Each run gives a **random result**. To estimate the true mean:
+This estimate is **noisy and uncertain** → Pareto front is **approximate**.
 
-$$\hat{f}(x) = \frac{1}{n} \sum_{i=1}^n f(x,\xi_i)$$
-
-Because this is only an **estimate**, the Pareto front is **noisy and uncertain**.
-If you reran the experiment, the front might shift slightly → hence **approximate**.
+**Computational burden**: Total runs = Population Size × Generations × Replications
+*Example*: $50 \times 100 \times 10 = 50,000$ simulation runs!
 
 ---
 
@@ -350,62 +318,95 @@ If you reran the experiment, the front might shift slightly → hence **approxim
 > Used in GA/NSGA-II to guide selection pressure toward better solutions.
 
 ---
-
-### Step-by-Step: How to Do Pareto Ranking
+---
+### ⚙️ Step-by-Step: Efficient Manual Pareto Ranking Method
 
 **Example:** Five solutions with two objectives $f_1$ and $f_2$, both to be **minimised**.
 
-|Solution|f₁ (Waiting Time)|f₂ (Cost)|
-|---|---|---|
-|A|8|250|
-|B|9|200|
-|C|7|300|
-|D|10|260|
-|E|7|220|
-
-#### **Step 1: Identify Non-Dominated Solutions (Rank 1)**
-
-A solution is **non-dominated** if no other solution is better in **all** objectives.
-
-Compare each pair:
-- E dominates A (7 < 8 and 220 < 250) ✓
-- E dominates B (7 < 9 and 220 > 200, but not both) ✗
-- E dominates D (7 < 10 and 220 < 260) ✓
-- C is not dominated by any solution (lowest f₁ but highest f₂)
-- E is not dominated by any solution
-
-**✅ Rank 1 (Pareto Front)** = {C, E}
-
-#### **Step 2: Remove Rank 1, Re-evaluate Remaining**
-
-Remaining: {A, B, D}
-
-- B dominates D (9 < 10 and 200 < 260) ✓
-- B is non-dominated among remaining
-
-**✅ Rank 2** = {B}
-
-#### **Step 3: Remaining Solutions**
-
-Remaining: {A, D}
-
-- Neither dominates the other (A better in f₁, D better in f₂)
-
-**✅ Rank 3** = {A, D}
+| Solution | $f_1$ (Waiting Time) | $f_2$ (Cost) |
+|-----------|----------------------|---------------|
+| A | 8 | 250 |
+| B | 9 | 200 |
+| C | 7 | 300 |
+| D | 10 | 260 |
+| E | 7 | 220 |
 
 ---
 
-### Final Ranking
+#### 🔹 Step 1: Sort by One Objective
 
-|Solution|Rank|Reason|
-|---|---|---|
-|C, E|1|Non-dominated front (Pareto optimal)|
-|B|2|Dominated only by Rank 1|
-|A, D|3|Dominated by Rank 1 and/or Rank 2|
+To reduce comparisons, **sort by $f_1$** (smallest to largest).  
+Dominance can only occur *downward* in this order.
 
-**Visual Interpretation:**
-Plotting $f_1$ vs $f_2$ shows Rank 1 as the **Pareto front** (outer boundary), Rank 2 just inside, etc.
+| Solution | $f_1$ | $f_2$ |
+|-----------|-------|-------|
+| C | 7 | 300 |
+| E | 7 | 220 |
+| A | 8 | 250 |
+| B | 9 | 200 |
+| D | 10 | 260 |
 
+---
+
+#### 🔹 Step 2: Apply the Dominance Rule
+
+> **A solution is on the Pareto front if no other solution is better in both objectives.**
+> 
+> It can still be worse in one objective, as long as it’s better in the other — that trade-off keeps it non-dominated.
+> 
+> A solution is dominated (and not on the Pareto front) if there exists another solution that is strictly better in both objectives (for minimisation: lower $f_1$ and lower $f_2$).
+
+---
+
+#### 🔹 Step 3: Scan–Compare–Eliminate
+
+Compare each new solution only with the **current non-dominated** ones above it.
+
+| Step | Candidate | Compare With | Result | Keep / Remove |
+|------|------------|---------------|---------|----------------|
+| 1 | C | — | First entry | Keep |
+| 2 | E | C | E dominates C ($7=7$, $220<300$) | Remove C |
+| 3 | A | E | E dominates A ($7<8$, $220<250$) | Remove A |
+| 4 | B | E | No dominance ($7<9$, $220>200$) | Keep both |
+| 5 | D | E, B | D dominated by both ($10>7$, $260>220$) | Remove D |
+
+✅ **Rank 1 (Pareto Front)** = $\{E, B\}$
+
+---
+
+#### 🔹 Step 4: Remove Rank 1 and Repeat
+
+Remaining: $\{A, C, D\}$
+
+| Step | Candidate | Compare With | Result | Keep / Remove |
+|------|------------|---------------|---------|----------------|
+| 1 | A | — | Keep |
+| 2 | C | A | No dominance ($7<8$, $300>250$) | Keep both |
+| 3 | D | A, C | D dominated by both | Remove D |
+
+✅ **Rank 2** = $\{A, C\}$  
+✅ **Rank 3** = $\{D\}$
+
+---
+
+### 🧾 Final Ranking
+
+| Solution | Rank | Reason |
+|-----------|------|--------|
+| E, B | 1 | Pareto-optimal (non-dominated) |
+| A, C | 2 | Dominated only by Rank 1 |
+| D | 3 | Dominated by higher ranks |
+
+---
+
+> [!tip] Memory Shortcut: **Sort–Scan–Strip**  
+> 1. **Sort** by one objective (usually $f_1$).  
+> 2. **Scan** each new solution against current non-dominated ones.  
+> 3. **Strip** out any dominated solutions immediately.  
+>   
+> This produces Pareto fronts quickly and cleanly for exam-style problems.
+
+---
 ---
 
 ### Why It's "Not Strictly Correct" in MOSO
